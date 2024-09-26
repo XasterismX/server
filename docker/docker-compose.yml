@@ -1,0 +1,15 @@
+version: "1"
+services:
+  backend:
+    build:
+      context: ./docker
+      dockerfile: ./Dockerfile
+    ports:
+      - 5000:3000
+    networks:
+      main:
+        -
+
+networks:
+  main:
+    driver: bridge
