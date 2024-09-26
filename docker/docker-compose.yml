@@ -7,8 +7,7 @@ services:
     ports:
       - 5000:3000
     networks:
-      main:
-        -
+      - main
 networks:
   main:
     driver: bridge
